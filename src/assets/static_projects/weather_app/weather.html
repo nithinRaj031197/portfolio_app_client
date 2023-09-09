@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input class="city_name_input" type="text" placeholder="Enter the city name..." spellcheck="false" />
+
+        <button>
+          <img class="search_button" src="./assets/search.png" alt="Search Icon" />
+        </button>
+      </div>
+
+      <div class="loading">Loading...</div>
+
+      <div class="weather">
+        <img class="weather_icon" src="./assets/rain.png" alt="Weather Icon" class="weather_icon" />
+        <h1 class="temperature">22&deg;c</h1>
+        <h2 class="city">Bengaluru</h2>
+
+        <div class="details">
+          <div class="col">
+            <img src="./assets/humidity.png" alt="Humidity Icon" />
+            <div>
+              <p class="humidity">90%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <img src="./assets/wind.png" alt="Wind Icon" />
+            <div>
+              <p class="wind_speed">10 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
+<!--
+
+    By Default in box-model, if we set any height and width it applies only to content
+    of the element and if we specify any extra padding or border or margin it causes
+    unexpected layout issues.
+-->
